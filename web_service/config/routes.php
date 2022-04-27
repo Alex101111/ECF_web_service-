@@ -33,5 +33,25 @@ $router->map('GET|POST', '/signin', function () {
 $router->map('GET|POST', '/signout', function () {
     $signoutController = new SignoutController();
     $signoutController->index();
+
 });
+$router->map('GET', '/user', function () {
+    $UserController = new UserController();
+    $UserController->index();
+});
+
+$router->map('GET', '/user/show', function () {
+    $UserController = new UserController();
+    $UserController->show();
+});
+
+$router->map('PUT', '/user/edit', function () {
+    $UserController = new UserController();
+    $UserController->edit();
+});
+$router->map('DELETE', '/user/delete', function () {
+    $UserController = new UserController();
+    $UserController->delete();
+});
+
 

@@ -3,6 +3,7 @@
 require_once implode(DIRECTORY_SEPARATOR, ['..', 'config', 'setup.php']);
 require_once implode(DIRECTORY_SEPARATOR, [ROOT, 'vendor', 'autoload.php']);
 
+
 session_start();
 
 $requestUrl = filter_input(INPUT_SERVER, "REQUEST_URI");
